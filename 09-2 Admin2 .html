@@ -1,0 +1,26 @@
+<!--WAP Java Script code to for Login Page, id and password recieve from text box <br />-->
+<html>
+<head>
+<script>
+function login()
+{
+var id = document.getElementById("uname").value;
+var pass = document.getElementById("upass").value;
+if((id=="admin")&&(pass==1001))
+{
+document.write("Login Succesfully");
+}
+else
+{
+document.write("Please Try Again");
+}
+} 
+</script>
+</head>
+<body>
+User &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 
+<input type = text id="uname"><br /><br />
+Password : <input type = password id="upass" maxlength=8><br /><br />
+<pre>		    <input type =submit value="Login" onclick = "login()">
+</body>
+</html>

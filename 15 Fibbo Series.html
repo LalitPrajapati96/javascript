@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function Fibbo()
+{
+var num,n1,n2,n3,counter=3;
+num=parseInt(document.getElementById("mytxt").value);
+n1=1;
+n2=1;
+document.write(n1);
+document.write("<br />"+n2);
+while(counter<=num)
+{
+n3=n1+n2;
+document.write("<br />"+n3);
+n1=n2;
+n2=n3;
+counter++;
+}
+}
+</script>
+</head>
+<body>
+<label for "Fibbo">Enter Limit for Fibbonacci Series : </label>
+<input type=text id="mytxt" />
+<input type=submit id="btn" value="click here" onclick="Fibbo()">
+</body>
+</html>

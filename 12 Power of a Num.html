@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+function My_Power()
+{
+var base,power,i;
+var result=1;
+base=parseInt(document.getElementById("mytxt1").value);
+power=parseInt(document.getElementById("mytxt2").value);
+for(i=1;i<=power;i++)
+{
+result=result*base;
+}
+document.write("<p>Base Value = "+base+"</p>");
+document.write("<p>Power Value = "+power+"</p>");
+document.write("<p>Result = "+result+"</p>");
+}
+</script>
+<body>
+<pre>
+<label for "base">Enter Base Value   : </label><input type=text id="mytxt1" />
+
+
+ <label for "power">Enter power Value : </label><input type=text id="mytxt2" />
+
+			<input type=submit id="btn" value="click here" onclick="My_Power()">
+</pre>
+</body>
+</html>

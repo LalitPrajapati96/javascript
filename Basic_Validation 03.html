@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function matchpass()
+{
+var firstpassword=document.myForm.password1.value;
+var secondpassword=document.myForm.password2.value;
+
+if(firstpassword==secondpassword)
+{
+return true;
+}
+else
+{
+alert("password must be same!");
+document.myForm.password2.focus();
+document.myForm.password2.value="";
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="myForm" action="" onsubmit="return matchpass()">
+<pre>
+Password	 :<input type="password" name="password1" /><br/>
+Re-enter Password:<input type="password" name="password2"/><br/>
+			<input type="submit" />
+</pre>
+</form>
+
+</body>
+</html>

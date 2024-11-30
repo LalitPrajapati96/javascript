@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+function Prime()
+{
+var start,end,i,j;
+var flag;
+start=parseInt(document.getElementById("mytxt1").value);
+end=parseInt(document.getElementById("mytxt2").value);
+document.write("<br /> Prime Number Series");
+for(i=start;i<=end;i++)
+{
+flag=0;
+for(j=2;j<=parseInt(i/2);j++)
+{
+if(i%j==0)
+{
+flag=1;
+break;
+}
+}
+if(flag==0)
+document.write("<br />"+i);
+}
+}
+</script>
+<body>
+<h1>Prime Seriese</h1>
+<label for "prime">Start Number  : </label>
+<input type=text id="mytxt1" /><br /><br />
+<label for "prime">Ends Number  : </label>
+<input type=text id="mytxt2" />
+<input type=submit id="btn" value="click here" onclick="Prime()">
+</body>
+</html>

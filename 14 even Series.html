@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+function EvenSeries()
+{
+var start,end;
+start=parseInt(document.getElementById("mytxt1").value);
+end=parseInt(document.getElementById("mytxt2").value);
+while(start<=end)
+{
+if(start%2==0)
+{
+document.write("<br />"+start);
+}
+start++;
+}
+}
+</script>
+<body>
+Even Series Srt Point : <input type=text id="mytxt1" />
+<br />
+Even Series End Point : <input type=text id="mytxt2" />
+<input type=submit id="btn" value="click here" onclick="EvenSeries()">
+</body>
+</html>

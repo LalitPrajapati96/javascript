@@ -1,0 +1,32 @@
+<!WA java Script to print Factrorial of a Number using Function With Parameter with Resturn Type-->
+<html>
+<head>
+<script>
+function fact(n)
+{
+var fact=n;
+if(fact==1 && fact==0)
+{
+return 1;
+}
+else
+{
+for(i=1;i<=n;i++)
+{
+fact = fact*i;
+}
+return(fact);
+}
+}
+function factorial()
+{
+var num = prompt("Enter Numver for Factorial = ");
+var my_fact = fact(num);
+document.write("<br /> Factorial of "+num+" is "+my_fact);
+}
+</script>
+</head>
+<body>
+<input type = button value = "Factorial" onclick="factorial()">
+</body>
+</html>

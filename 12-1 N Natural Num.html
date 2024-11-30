@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+function N_natural()
+{
+var num,n,i;
+num=parseInt(document.getElementById("mytxt").value);
+n=parseInt(num);
+for(i=1;i<=n;i++)
+{
+document.write("<p>"+i+"</p>");
+}
+}
+</script>
+<label for "N Natural">Enter N Natural Number : </label>
+<input type=text id="mytxt" />
+<input type=submit id="btn" value="click here" onclick="N_natural()">
+</body>
+</html>
